@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aline Lurquin - Kinésithérapeute</title>
+
+ 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+       
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Qui suis-je</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <span class="signature">Aline Lurquin</span>
+        </div>
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+    <main>
+        <section class="Welcome">
+            <h1>Rééduquer, soulager, renforcer</h1>
+            <p>Votre bien-être en mouvement</p>
+            
+        </section>
+        <section class="Presentation">
+            <h2>Présentation</h2>
+            <p>
+                Je suis Aline Lurquin, kinésithérapeute passionnée par la santé et le bien-être de mes patients.
+                Mon objectif est de vous aider à retrouver et maintenir une pleine mobilité,
+                réduire vos douleurs, et améliorer votre qualité de vie au quotidien.
+                Avec une approche personnalisée, j'accompagne chaque patient dans son parcours de rééducation,
+                en prenant en compte ses besoins spécifiques et son rythme de progression. 
+                Que vous soyez en rééducation après une blessure, à la recherche de solutions pour des douleurs chroniques,
+                ou simplement désireux(se) de renforcer votre corps, je suis là pour vous guider à chaque séance.
+            </p>
+        </section>
+        <section class="services">
+            <h2 id="h2-services"> Mes Services</h2>
+            <ul class="services-grid">
+                <li>
+                    <i class="fas fa-bone service-icon"></i>
+                    <h3>Kiné-sithérapie orthopédique</h3>
+                </li>
+                <li>
+                    <i class="fas fa-user-md service-icon"></i>
+                    <h3>Rééducation post-opératoire</h3>
+                </li>
+                <li>
+                    <i class="fas fa-child service-icon"></i>
+                    <h3>Kiné-sithérapie pédiatrique</h3>
+                </li>
+                <li>
+                    <i class="fas fa-running service-icon"></i>
+                    <h3>Sportive et gériatrique</h3>
+                </li>
+            </ul>
+        </section>
+        <div class="container">
+            <h2 class="text-center">Prise de contact</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Votre nom" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Votre email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Votre message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Aline Lurquin - Tous droits réservés
+    </footer>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
